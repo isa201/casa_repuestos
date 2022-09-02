@@ -1,0 +1,271 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("img/fondo-gris.jpg");
+}
+header {
+  width: 90%;
+  height: 100px;
+  margin: 0px auto;
+  margin-top: 40px;
+  background-color: gray;
+  margin-bottom: 5px;
+}
+
+h1 {
+  position: absolute;
+  top: 47px;
+  left: 70px;
+  width: 20%;
+  height: 100px;
+}
+nav {
+  position: absolute;
+  width: 30%;
+  height: 50px;
+  top: 80px;
+  right: 40px;
+  transition: all 400ms;
+}
+nav ul li {
+  padding: 3px;
+}
+#menu-navegacion ul li a:hover {
+  color: rgb(248, 233, 233);
+}
+
+#logo {
+  width: 220px;
+  height: 80px;
+  border: 1px solid transparent;
+  border-radius: 10px 10px 10px 10px;
+  transition: all 1s;
+}
+/*rotar y aumentar con transicion con tiempo*/
+#logo:hover {
+  transform: scale(1.5, 1.5) rotate(360deg);
+  cursor: pointer;
+}
+
+#menu-navegacion ul li {
+  display: inline;
+  list-style: none;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+#menu-navegacion ul li a {
+  font-family: "Exo 2", sans-serif;
+  text-decoration: none;
+  color: rgba(240, 7, 7, 0.555);
+  font-size: 13px;
+  font-weight: bold;
+}
+ul li:last-child {
+  margin-right: 50px;
+}
+
+/****************************************/
+section {
+  width: 90%;
+  height: 880px;
+  margin: 0px auto;
+  background-color: rgba(54, 53, 53, 0.374);
+}
+
+#sobre-nosotros {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(133, 40, 40, 0.737);
+}
+
+#sobre-nosotros h4 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#sobre-nosotros p {
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: sans-serif;
+}
+
+#marcas {
+  margin-bottom: 150px;
+}
+
+#marcas h3 {
+  color: rgb(232, 59, 59);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+#marcas ul {
+  width: 70%;
+  height: 170px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono-marca {
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Courier, monospace;
+  display: block;
+  background-color: rgb(79, 79, 79);
+  list-style: none;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+  border-radius: 0px 0px 5px 5px;
+  border-top: 10px solid black;
+  transition: all 300ms;
+}
+#marcas a {
+  text-decoration: none;
+  color: rgb(167, 159, 159);
+}
+
+.icono-marca img {
+  margin-top: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.icono-marca:hover {
+  transform: scale(1.2, 1.2);
+  background-color: rgb(236, 241, 245);
+}
+
+#contacto {
+  text-align: center;
+  width: 100%;
+  height: 156px;
+  background-color: gray;
+  padding-top: 20px;
+}
+#contacto h4 {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#contacto ul {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 20px;
+}
+#contacto ul li {
+  display: inline-block;
+  margin-left: 50px;
+  text-align: center;
+}
+#contacto ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+#contacto ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#contacto ul li a:hover {
+  color: rgba(145, 42, 42, 0.932);
+}
+
+footer {
+  width: 90%;
+  height: 70px;
+  margin: 0px auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: rgb(51, 51, 51);
+  text-align: center;
+  line-height: 70px;
+  font-family: "Exo 2", sans-serif;
+  color: rgba(184, 54, 54, 0.952);
+}
+
+/*de 321 a 480*/
+@media (min-width: 280px) and (max-width: 480px) {
+  body {
+    background-image: none;
+  }
+  header,
+  section,
+  footer,
+  article {
+    width: 100%;
+    margin: 0px;
+    font-size: 12px;
+  }
+  #marcas ul li img {
+    display: none;
+  }
+  #marcas ul li {
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    border-radius: 0px;
+    margin-bottom: 11px;
+    border-top: 5px solid black;
+  }
+  #marcas {
+    height: 30%;
+  }
+  #marcas ul {
+    width: 80%;
+    height: 200px;
+    display: block;
+  }
+  section {
+    height: 775px;
+  }
+  header {
+    height: 65px;
+  }
+  #logo {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top: -40px;
+    left: -60px;
+    border-radius: 3px;
+  }
+  nav {
+    top: 10px;
+  }
+  #contacto ul {
+    padding-left: 32px;
+  }
+  #contacto ul li img {
+    width: 30px;
+    height: 30px;
+  }
+  #contacto ul li {
+    margin-left: 15px;
+  }
+}
+/*de 481 a 768*/
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/*de 769 a 960*/
+@media (min-width: 769px) and (max-width: 960px) {
+}
+/*de 961 a 1024*/
+@media (min-width: 961px) and (max-width: 1024px) {
+}
+/*de 1025 en adelante*/
+@media (min-width: 1025px) {
+}

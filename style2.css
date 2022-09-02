@@ -1,0 +1,61 @@
+/****************************************/
+#section-contacto {
+  width: 90%;
+  height: 500px;
+  margin: 0px auto;
+  background-color: rgba(54, 53, 53, 0.374);
+}
+#ubicacion {
+  width: 90%;
+  height: 450px;
+  margin: 0px auto;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+#mapa {
+  width: 600px;
+  height: 400px;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+#mapa h3 {
+  text-decoration: underline;
+}
+
+#mapa h4 {
+  margin-bottom: 30px;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+#mapa iframe {
+  width: 100%;
+  box-shadow: 1px 3px 5px black;
+}
+
+#form-contacto {
+  padding: 20px;
+  background: linear-gradient(rgb(159, 134, 134), rgb(113, 28, 28));
+  width: 50%;
+  margin: 0px auto;
+  height: 460px;
+  font-family: "Exo 2", sans-serif;
+}
+#form-contacto input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 5px;
+  width: 100%;
+}
+#form-contacto input[type="submit"] {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+#form-contacto input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: gray;
+  border: none;
+  border-radius: 3px;
+  height: 30px;
+}
